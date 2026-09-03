@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tareas Estudiantes - Dana Sofia</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-blob"></div>
+  <header>
+    <div class="logo">📚</div>
+    <h1>Tareas Estudiantes</h1>
+    <p>Panel personal de Dana Sofia • Organización inteligente</p>
+  </header>
+
+  <div class="contenedor">
+    <div class="card form-card">
+      <h3>✨ Nueva Tarea</h3>
+      <input type="text" id="titulo" placeholder="Título de la tarea">
+      <input type="text" id="materia" placeholder="Materia (Ej: Matemáticas)">
+      <textarea id="descripcion" placeholder="Descripción detallada..."></textarea>
+      <div class="fila">
+        <input type="date" id="fecha">
+        <select id="prioridad">
+          <option value="Baja">🟢 Baja</option>
+          <option value="Media">🟡 Media</option>
+          <option value="Alta">🔴 Alta</option>
+        </select>
+      </div>
+      <button id="btnAgregar">Guardar Tarea</button>
+    </div>
+
+    <div class="card lista-card">
+      <div class="lista-header">
+        <h3>🗂️ Mis Tareas</h3>
+        <span id="contador">0 tareas</span>
+      </div>
+      <div id="listaTareas"></div>
+    </div>
+  </div>
+<script src="script.js"></script>
+</body>
+</html>

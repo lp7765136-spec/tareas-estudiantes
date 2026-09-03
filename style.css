@@ -1,0 +1,36 @@
+* { box-sizing: border-box; font-family: 'Inter', sans-serif; }
+body { margin: 0; background: #f7f6fb; min-height: 100vh; position: relative; overflow-x: hidden; }
+.bg-blob { position: fixed; width: 800px; height: 800px; background: radial-gradient(circle, #8a6cff33, #ff5ecd22, transparent); filter: blur(40px); top: -200px; right: -200px; z-index: -1; border-radius: 50%; }
+
+header { text-align: center; padding: 45px 20px 20px; }
+.logo { width: 60px; height: 60px; background: linear-gradient(135deg, #6c3bff, #ff5ecd); border-radius: 18px; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; font-size: 28px; box-shadow: 0 10px 25px rgba(108,59,255,.3); }
+header h1 { font-size: 36px; font-weight: 700; color: #1a1a2e; margin: 0; letter-spacing: -1px; }
+header p { color: #888; margin-top: 8px; font-size: 15px; }
+
+.contenedor { display: flex; gap: 25px; max-width: 1100px; margin: 30px auto; padding: 0 20px; flex-wrap: wrap; justify-content: center; align-items: flex-start; }
+
+.card { background: rgba(255,255,255,0.85); backdrop-filter: blur(20px); border: 1px solid rgba(255,255,255,0.7); border-radius: 24px; padding: 28px; box-shadow: 0 20px 40px rgba(0,0,0,0.06); }
+
+.form-card { width: 100%; max-width: 420px; }
+.form-card h3, .lista-card h3 { margin: 0 0 20px 0; color: #1a1a2e; font-size: 18px; }
+
+input, textarea, select { width: 100%; padding: 14px 16px; margin-bottom: 14px; border: 1px solid #eceaf0; border-radius: 12px; background: #fbfafd; outline: none; font-size: 14px; transition: .2s; }
+input:focus, textarea:focus, select:focus { border-color: #6c3bff; background: white; box-shadow: 0 0 0 4px #6c3bff15; }
+textarea { min-height: 80px; resize: none; }
+.fila { display: flex; gap: 12px; }
+
+#btnAgregar { width: 100%; background: linear-gradient(135deg, #6c3bff, #8b5cff); color: white; border: none; padding: 16px; border-radius: 12px; font-weight: 600; font-size: 15px; cursor: pointer; margin-top: 5px; box-shadow: 0 8px 20px rgba(108,59,255,.3); transition: .2s; }
+#btnAgregar:hover { transform: translateY(-2px); box-shadow: 0 12px 25px rgba(108,59,255,.4); }
+
+.lista-card { flex: 1; min-width: 340px; max-width: 600px; min-height: 400px; }
+.lista-header { display: flex; justify-content: space-between; align-items: center; }
+#contador { background: #f0eeff; color: #6c3bff; padding: 6px 12px; border-radius: 20px; font-size: 12px; font-weight: 600; }
+
+.tarea { background: white; border: 1px solid #f0f0f0; padding: 16px; border-radius: 16px; margin-bottom: 12px; border-left: 4px solid #6c3bff; animation: aparecer .4s ease; transition: .2s; }
+.tarea:hover { transform: translateY(-2px); box-shadow: 0 10px 20px rgba(0,0,0,.05); }
+.tarea.Alta { border-left-color: #ff4d6d; } .tarea.Media { border-left-color: #ffb020; } .tarea.Baja { border-left-color: #2ecc71; }
+.tarea strong { color: #1a1a2e; font-size: 15px; }
+.tarea p { margin: 6px 0; color: #666; font-size: 13px; }
+.tarea small { color: #999; font-size: 12px; }
+.tarea button { background: #fff1f1; color: #ff4d6d; border: none; padding: 6px 12px; border-radius: 8px; cursor: pointer; margin-top: 10px; font-weight: 600; font-size: 12px; }
+@keyframes aparecer { from { opacity:0; transform: translateY(10px); } to { opacity:1; transform: translateY(0); } }
