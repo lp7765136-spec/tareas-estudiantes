@@ -19,17 +19,34 @@
     <div class="card form-card">
       <h3>✨ Nueva Tarea</h3>
       <input type="text" id="titulo" placeholder="Título de la tarea">
-      <input type="text" id="materia" placeholder="Materia (Ej: Matemáticas)">
-      <textarea id="descripcion" placeholder="Descripción detallada..."></textarea>
-      <div class="fila">
-        <input type="date" id="fecha">
-        <select id="prioridad">
-          <option value="Baja">🟢 Baja</option>
-          <option value="Media">🟡 Media</option>
-          <option value="Alta">🔴 Alta</option>
-        </select>
-      </div>
-      <button id="btnAgregar">Guardar Tarea</button>
+<input type="text" id="materia" placeholder="Materia (Ej: Matemáticas)">
+<textarea id="descripcion" placeholder="Descripción detallada..."></textarea>
+
+<input type="text" id="profesor" placeholder="Profesor (Ej: Lic. Pérez)">
+
+<div class="fila">
+  <select id="tipo">
+    <option value="Tarea">Tarea</option>
+    <option value="Examen">Examen</option>
+    <option value="Proyecto">Proyecto</option>
+  </select>
+  <select id="estado">
+    <option value="Pendiente">Pendiente</option>
+    <option value="En proceso">En proceso</option>
+    <option value="Completada">Completada</option>
+  </select>
+</div>
+
+<div class="fila">
+  <input type="date" id="fecha">
+  <select id="prioridad">
+    <option value="baja">Baja</option>
+    <option value="media">Media</option>
+    <option value="alta">Alta</option>
+  </select>
+</div>
+
+<button id="btnAgregar">Guardar Tarea</button>
     </div>
 
     <div class="card lista-card">
